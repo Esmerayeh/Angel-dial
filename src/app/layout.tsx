@@ -7,9 +7,18 @@ import "@/styles/glitch.css";
 import "@/styles/dream.css";
 
 export const metadata: Metadata = {
-  title: "ANGEL DIAL: A Soft Haunted Internet Instrument",
+  title: "ANGEL DIAL ✦",
   description:
-    "A soft pastel haunted internet instrument of circular rituals, pearl clocks, ghost veils, moon bottles, and visitor relics.",
+    "A soft haunted internet instrument. Turn, pull, tune, open, and drift.",
+  icons: {
+    icon: [
+      { url: "/icon.png", sizes: "512x512", type: "image/png" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

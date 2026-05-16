@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Angel Dial logo">
+  <defs>
+    <radialGradient id="face" cx="42%" cy="32%" r="72%">
+      <stop offset="0" stop-color="#fffef8"/>
+      <stop offset="0.46" stop-color="#fff3ec"/>
+      <stop offset="0.74" stop-color="#f7edf9"/>
+      <stop offset="1" stop-color="#eaf3ff"/>
+    </radialGradient>
+    <linearGradient id="pastel-ring" x1="82" y1="104" x2="430" y2="408" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd6df"/>
+      <stop offset="0.48" stop-color="#d9c8ff"/>
+      <stop offset="1" stop-color="#b9ddff"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="198" y1="78" x2="318" y2="438" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff5bf"/>
+      <stop offset="0.35" stop-color="#dca94f"/>
+      <stop offset="0.7" stop-color="#b8782c"/>
+      <stop offset="1" stop-color="#fff0b2"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="35%" cy="28%" r="72%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.38" stop-color="#f9d9ef"/>
+      <stop offset="0.68" stop-color="#d5c5ff"/>
+      <stop offset="1" stop-color="#bfe8ff"/>
+    </radialGradient>
+    <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="256" cy="256" r="222" fill="#fff9ee" opacity=".86" filter="url(#soft-glow)"/>
+  <circle cx="256" cy="256" r="202" fill="url(#face)"/>
+  <circle cx="256" cy="256" r="209" fill="none" stroke="url(#gold)" stroke-width="8"/>
+  <circle cx="256" cy="256" r="174" fill="none" stroke="url(#pastel-ring)" stroke-width="42" opacity=".95"/>
+  <circle cx="256" cy="256" r="151" fill="none" stroke="#ffffff" stroke-width="8" opacity=".92"/>
+  <circle cx="256" cy="256" r="110" fill="none" stroke="#e7b86e" stroke-width="3" opacity=".68"/>
+  <circle cx="256" cy="256" r="74" fill="none" stroke="#ffffff" stroke-width="4" opacity=".75"/>
+
+  <g fill="url(#gold)" stroke="#fff2bd" stroke-width="3" stroke-linejoin="round">
+    <path d="M256 71 267 134 256 174 245 134Z"/>
+    <path d="M256 441 245 378 256 338 267 378Z"/>
+    <path d="M256 116 274 258 256 318 238 258Z"/>
+    <path d="M256 52 268 86 302 98 268 110 256 144 244 110 210 98 244 86Z"/>
+    <path d="M256 368 268 402 302 414 268 426 256 460 244 426 210 414 244 402Z"/>
+    <path d="M98 256 110 246 128 256 110 266Z" opacity=".95"/>
+    <path d="M414 256 402 246 384 256 402 266Z" opacity=".95"/>
+  </g>
+
+  <g fill="#fff9f0" stroke="url(#gold)" stroke-width="6">
+    <circle cx="256" cy="256" r="48"/>
+    <circle cx="256" cy="256" r="32" fill="url(#moon)" stroke-width="3"/>
+    <circle cx="256" cy="168" r="9"/>
+    <circle cx="256" cy="344" r="9"/>
+    <circle cx="122" cy="156" r="8"/>
+    <circle cx="390" cy="356" r="8"/>
+  </g>
+
+  <g fill="#fff7cf">
+    <circle cx="164" cy="332" r="4"/>
+    <circle cx="355" cy="182" r="4"/>
+    <circle cx="182" cy="185" r="3"/>
+    <circle cx="332" cy="332" r="3"/>
+  </g>
+</svg>
